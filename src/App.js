@@ -24,7 +24,7 @@ function DateTimePretty(Component) {
             result = Math.round(difference / (24 * 60 * 60 * 1000)) + ' дней назад'
         }
 
-        return <p className="date">{result}</p>;
+        return <Component date={result} />;
     }
 }
 const PrettyDateTime = DateTimePretty(DateTime);
